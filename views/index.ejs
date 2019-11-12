@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <titl>
+            <%=title%>
+        </titl>
+    </head>
+
+    <body>
+<%include ./header.ejs %>
+<h1>loop it</h1>
+<ul>
+    <%for (var i =0; i<length; i++){ %>
+<li>
+<%= "Loop" + i %>
+</li>
+
+   <% } %>
+</ul>
+<% include ./footer.ejs %>
+    </body>  
